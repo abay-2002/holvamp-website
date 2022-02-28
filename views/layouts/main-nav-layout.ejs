@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg mycss-color-dark">
+    <div class="container">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="/img/logo/web-navbar-brand200x33.png">
+            </a>
+          </div>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <% pages.forEach(page => { %>
+                <li class="nav-item">
+                  <a class="nav-link active fs-4 text-light mycss-hover-button" href="<%= page.to %>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="<%= page.title %>"><i class="<%= page.icon %>"></i></a>
+                </li>
+            <% }) %>
+        </ul>
+      </div>
+    </div>
+  </nav>

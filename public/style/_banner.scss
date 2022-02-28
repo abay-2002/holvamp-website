@@ -1,0 +1,39 @@
+/* banner */
+#banner {
+    height: 90vh;
+    background-image: url(../img/banner/holvamp-web-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -300px;
+}
+
+#banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+// #welcome-text {
+//     font-family: 'Rubik', sans-serif !important;
+// }
+
+@media only screen and (min-width: 1000px){
+    #welcome-text {
+        font-size: 84px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #banner {
+        height: 90vh;
+        background-image: url(../img/banner/holvamp-web-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -100px;
+
+    }      
+    #welcome-text {
+        font-size: 34px;
+    }  
+}
